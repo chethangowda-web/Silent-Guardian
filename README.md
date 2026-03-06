@@ -110,7 +110,8 @@ silent-guardian/
 ├── next.config.ts
 └── README.md
 ```
-
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/caarlos0/starcharts.svg?variant=adaptive)](https://starchart.cc/caarlos0/starcharts)
 ---
 
 ## 🚀 Deployment Guide
