@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #020617;
+  --foreground: #e5e7eb;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+.sg-gradient-border {
+  @apply relative overflow-hidden rounded-2xl;
+}
+
+.sg-gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: conic-gradient(
+    from 180deg,
+    rgba(56, 189, 248, 0.7),
+    rgba(59, 130, 246, 0.6),
+    rgba(249, 115, 22, 0.7),
+    rgba(56, 189, 248, 0.7)
+  );
+  opacity: 0.5;
+  filter: blur(6px);
+  z-index: -1;
+}
+
+.sg-card {
+  @apply rounded-2xl bg-slate-900/70 border border-slate-800/70 backdrop-blur-xl;
+}
+
+.sg-button-primary {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-sm shadow-glow-primary transition;
+}
+
+.sg-button-danger {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-full bg-red-500 hover:bg-red-400 text-slate-50 font-semibold text-sm shadow-glow-accent transition;
+}
+
